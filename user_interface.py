@@ -11,10 +11,10 @@ def img2vector(img: np.array):
     return img_arr2
 
 # 加载预训练的 SVM 模型
-start_time = time.time()
+# start_time = time.time()
 model_path = "svm.model"  # 确保模型路径正确
 clf = joblib.load(model_path)
-print(time.time() - start_time)
+# print(time.time() - start_time)
 
 # 图像处理和预测函数
 def predict_digit(image):

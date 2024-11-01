@@ -4,7 +4,7 @@ import struct
 from PIL import Image
 import os
  
-data_file = r'C:\Users\MILLEX\Desktop\cv\实验4\img_train\train-images.idx3-ubyte'
+data_file = 'img_train/train-images.idx3-ubyte'
 # It's 47040016B, but we should set to 47040000B
 data_file_size = 47040016
 data_file_size = str(data_file_size - 16) + 'B'
@@ -15,7 +15,7 @@ datas = struct.unpack_from(
     '>' + data_file_size, data_buf, struct.calcsize('>IIII'))
 datas = np.array(datas).astype(np.uint8).reshape(
     numImages, 1, numRows, numColumns)
-label_file = r'C:\Users\MILLEX\Desktop\cv\实验4\img_train\train-labels.idx1-ubyte'
+label_file = 'img_train/train-labels.idx1-ubyte'
 # It's 60008B, but we should set to 60000B
 label_file_size = 60008
 label_file_size = str(label_file_size - 8) + 'B'
