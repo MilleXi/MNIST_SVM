@@ -1,4 +1,4 @@
-# cv_exp4
+# MNIST_SVM
 
 1. git 加载项目文件
 
