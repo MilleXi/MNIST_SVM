@@ -3,7 +3,7 @@
 1. git 加载项目文件
 
 ```bash
-git clone https://github.com/MilleXi/cv_exp4.git
+git clone https://github.com/MilleXi/MNIST_SVM.git
 ```
 
 2. 安装依赖
